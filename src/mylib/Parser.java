@@ -16,7 +16,7 @@ public class Parser {
     public String getOperator() {
         String operator = "";
 
-        if (Pattern.matches("(\\s?)+\\d+\\s?\\+\\s?.+", userInput)) {
+        if (Pattern.matches("(\\s?)+.+\\s?\\+\\s?.+", userInput)) {
             operator = "\\+";
         } else if (Pattern.matches("(\\s?)+.+\\s?\\*\\s?.+", userInput)) {
             operator = "\\*";
